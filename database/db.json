@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "hieu@gmail.com",
+      "pass": "hieupham",
+      "avatar": "https://i.pinimg.com/236x/dc/bf/44/dcbf443fe182e29d56214dbe7067a5e3.jpg",
+      "fullname": "Phạm Minh Hiếu"
+    }
+  ],
+  "plants": [
+    {
+      "id": "1",
+      "name": "Bonsai",
+      "price": "120.000",
+      "img": "https://i.pinimg.com/236x/00/ab/c8/00abc8444591574cf92c4622e141ac79.jpg",
+      "type": true,
+      "origin": "Châu phi",
+      "quantity": "156",
+      "status": "1",
+      "size": "Small",
+      "description": "Cây cảnh siêu đẹp, dùng để trang trí cho ngôi nhà"
+    },
+    {
+      "id": "2",
+      "name": "Bonsaiiii",
+      "price": "990.000",
+      "img": "https://i.pinimg.com/236x/00/ab/c8/00abc8444591574cf92c4622e141ac79.jpg",
+      "type": true,
+      "origin": "Châu phi",
+      "quantity": "156",
+      "status": "1",
+      "size": "Small",
+      "description": "Cây cảnh siêu đẹp, dùng để trang trí cho ngôi nhà"
+    },
+    {
+      "id": "3",
+      "name": "Bonsaaaaai",
+      "price": "1324.000",
+      "img": "https://i.pinimg.com/236x/00/ab/c8/00abc8444591574cf92c4622e141ac79.jpg",
+      "type": true,
+      "origin": "Châu phi",
+      "quantity": "156",
+      "status": "1",
+      "size": "Small",
+      "description": "Cây cảnh siêu đẹp, dùng để trang trí cho ngôi nhà"
+    },
+    {
+      "id": "4",
+      "name": "Bonsssssai",
+      "price": "120.000",
+      "img": "https://i.pinimg.com/236x/00/ab/c8/00abc8444591574cf92c4622e141ac79.jpg",
+      "type": true,
+      "origin": "Châu phi",
+      "quantity": "156",
+      "status": "1",
+      "size": "Small",
+      "description": "Cây cảnh siêu đẹp, dùng để trang trí cho ngôi nhà"
+    }
+  ],
+  "plantas": [
+    {
+      "id": "1",
+      "name": "Châụ hoa ăn thịt người",
+      "price": "250.000",
+      "img": "https://i.pinimg.com/564x/54/6c/dc/546cdcf6e1cc8a670519e41a1551f800.jpg",
+      "quantity": "156",
+      "status": "1",
+      "description": "Chậu câu màu trắng, dùng để trồng cây"
+    },
+    {
+      "id": "2",
+      "name": "Chậu hoa",
+      "price": "250.000",
+      "img": "https://i.pinimg.com/564x/54/6c/dc/546cdcf6e1cc8a670519e41a1551f800.jpg",
+      "quantity": "156",
+      "status": "1",
+      "description": "Chậu câu màu đen, dùng để trồng cây"
+    },
+    {
+      "id": "3",
+      "name": "Chậu hoa",
+      "price": "250.000",
+      "img": "https://i.pinimg.com/564x/54/6c/dc/546cdcf6e1cc8a670519e41a1551f800.jpg",
+      "quantity": "156",
+      "status": "1",
+      "description": "Chậu câu màu đen, dùng để trồng cây"
+    },
+    {
+      "id": "4",
+      "name": "Chậu hoa",
+      "price": "250.000",
+      "img": "https://i.pinimg.com/564x/54/6c/dc/546cdcf6e1cc8a670519e41a1551f800.jpg",
+      "quantity": "156",
+      "status": "1",
+      "description": "Chậu câu màu đen, dùng để trồng cây"
+    },
+    {
+      "id": "5",
+      "name": "kkkk này",
+      "price": "250.000",
+      "img": "https://i.pinimg.com/236x/74/e8/c3/74e8c303d989c68f65e389753f138598.jpg",
+      "quantity": "156",
+      "status": "1",
+      "description": "Chậu câu màu đen, dùng để trồng cây"
+    }
+  ],
+  "search": [
+    {
+      "id": "bf48",
+      "txt": "Tree plant"
+    },
+    {
+      "id": "e54f",
+      "txt": "abc"
+    },
+    {
+      "id": "fe49",
+      "txt": "Bonsai"
+    }
+  ],
+  "cart": [],
+  "notices": []
+}
