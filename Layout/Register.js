@@ -1,11 +1,43 @@
-import { Image, StyleSheet, Text, TextInput, View, CheckBox, TouchableOpacity } from 'react-native'
+import { Image, StyleSheet, Text, TextInput, View, CheckBox, TouchableOpacity, ToastAndroid } from 'react-native'
 import React, { useState } from 'react'
+import { URL } from './HomeScreen'
 
 const Register = (props, ) => {
     const [name, setname] = useState('')
     const [email, setemail] = useState('')
-    const [sdt, setsdt] = useState('')
+    const [pass2, setpass2] = useState('')
     const [pass, setpass] = useState('')
+
+    const addUser = async () => {
+        if(name == '' || email == '' || pass == ''){
+            ToastAndroid.show("Không được để trống",0);
+            return;
+        }
+        if(pass != pass2){
+            ToastAndroid.show("Mật khẩu chưa khớp",0);
+            return; 
+        }
+        const url = `${URL}/users`;
+        const NewUser = {
+            fullname : name,
+            email : email,
+            pass : pass,
+            avatar : 'https://i.pinimg.com/474x/6d/50/9d/6d509d329b23502e4f4579cbad5f3d7f.jpg'
+        }
+
+        const res = await fetch(url,{
+            method: "POST",
+            body : JSON.stringify(NewUser),
+            headers: {
+                "Content-Type" : "application/json"
+            }
+        });
+        if(res.ok){
+            console.log(res.data);
+            ToastAndroid.show("Đăng ký thành công",0);
+            props.navigation.navigate("LoginScreen");
+        }
+    }
     return (
         <View style={styles.container}>
             {/* <Image style={{ width: 100, height: 100 }}
@@ -13,7 +45,7 @@ const Register = (props, ) => {
             <View style={{ width: '100%', gap: 20, alignItems: 'center', justifyContent: 'center' }}>
                 <Text style={{ fontWeight: 'bold', textAlign: 'center', justifyContent: 'center', fontSize: 30 }}>Tạo tài khoản</Text>
                 <TextInput style={styles.input}
-                    placeholder='Họ tên' onChangeText={(txt) => {
+                    placeholder='Họ và tên' onChangeText={(txt) => {
                         setname(txt)
                     }} />
                 <TextInput style={styles.input}
@@ -21,18 +53,19 @@ const Register = (props, ) => {
                         setemail(txt)
                     }} />
                 <TextInput style={styles.input}
-                    placeholder='Số điện thoại' onChangeText={(txt) => {
-                        setsdt(txt)
-                    }} />
-                <TextInput style={styles.input}
                     placeholder='Password' onChangeText={(txt) => {
                         setpass(txt)
+                    }} />
+                <TextInput style={styles.input}
+                    placeholder='Nhập lại Password' onChangeText={(txt) => {
+                        setpass2(txt)
                     }} />
                 <Text style={{ textAlign: 'center' }}>Để đăng ký tài khoản, bạn đồng ý
                     <Text style={{ textDecorationLine: 'underline', color: 'green' }}>  Terms &{'\n'} Conditions</Text> and
                     <Text style={{ textDecorationLine: 'underline', color: 'green' }}> Privacy Policy</Text>
                 </Text>
-                <TouchableOpacity style={styles.btn}>
+                <TouchableOpacity onPress={addUser}
+                 style={styles.btn}>
                     <Text style={{ fontWeight: 'bold', fontSize: 15, color: 'white' }}>Đăng ký</Text>
                 </TouchableOpacity>
                 <Text style={{ textAlign: 'center', color: 'green' }}>________________Hoặc________________</Text>

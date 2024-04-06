@@ -1,7 +1,7 @@
 import { FlatList, Image, ImageBackground, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 
-export const URL = 'http://192.168.1.19:3000'
+export const URL = 'http://10.24.58.160:3000'
 
 const HomeScreen = ({ navigation }) => {
 
@@ -34,7 +34,7 @@ const HomeScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView>
+            <ScrollView howsVerticalScrollIndicator={false}>
                 <View style={{paddingTop:50,marginBottom:20, width: '100%', height: 320 }}>
                         <Image
                             style={{width: 400, height: '100%' }}

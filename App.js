@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import AuthNavigator from './navigator/AuthNavigator';
 import { NavigationContainer } from '@react-navigation/native';
 import WelcomeScreen from './Layout/WelcomeScreen';
-import MainNavigator from './navigator/MainNavigator';
-
+import { Provider } from 'react-redux';
+import store from './Redux/store';
+import { StatusBar } from 'react-native';
 
 export default function App() {
 
@@ -17,13 +18,14 @@ export default function App() {
   }, [])
 
   return (
-    checkWelcome
-      ? <WelcomeScreen />
+    <Provider store={store}>
+      <StatusBar translucent backgroundColor={"rgba(0,0,0,0.4)"}/>
+      {checkWelcome
+      ? <WelcomeScreen/>
       : <NavigationContainer>
         <AuthNavigator />
-      </NavigationContainer>
-  
+      </NavigationContainer>}
+    </Provider>
   );
-
 }
 

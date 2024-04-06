@@ -12,7 +12,8 @@ import Payment from '../Layout/Payment';
 import DetailProduct from '../Layout/DetailProduct';
 import PlantaSceen from '../Layout/PlantaScreen';
 import CartScreen from '../Layout/CartScreen';
-
+import Payment2 from '../Layout/Payment2';
+import FinalBill from '../Layout/FinalBill';
 
 
 const Tab = createBottomTabNavigator();
@@ -64,10 +65,15 @@ const MainNavigator = () => {
             <Stack.Screen name='Home' component={Home} />
             <Stack.Screen name='ManageUser' component={ManageUser} />
             <Stack.Screen name='Payment' component={Payment} />
+            <Stack.Screen name='Payment2' component={Payment2} />
+
             <Stack.Screen name='DetailProduct' component={DetailProduct} />
             <Stack.Screen name='PlantSceen' component={PlantSceen} />
             <Stack.Screen name='PlantaSceen' component={PlantaSceen} />
             <Stack.Screen name='CartScreen' component={CartScreen} />
+            <Stack.Screen name='SearchScreen' component={SearchScreen} />
+            <Stack.Screen name='FinalBill' component={FinalBill} />
+            <Stack.Screen name='NoticeScreen' component={NoticeScreen} />
         </Stack.Navigator>
     )
 }

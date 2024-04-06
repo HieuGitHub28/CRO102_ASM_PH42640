@@ -6,6 +6,13 @@
       "pass": "hieupham",
       "avatar": "https://i.pinimg.com/236x/dc/bf/44/dcbf443fe182e29d56214dbe7067a5e3.jpg",
       "fullname": "Phạm Minh Hiếu"
+    },
+    {
+      "id": "4e29",
+      "fullname": "pham minh hieu",
+      "email": "hieupm@gmail.com",
+      "pass": "hieupham",
+      "avatar": "https://i.pinimg.com/474x/6d/50/9d/6d509d329b23502e4f4579cbad5f3d7f.jpg"
     }
   ],
   "plants": [
@@ -107,18 +114,73 @@
   ],
   "search": [
     {
-      "id": "bf48",
-      "txt": "Tree plant"
-    },
-    {
       "id": "e54f",
       "txt": "abc"
     },
     {
       "id": "fe49",
       "txt": "Bonsai"
+    },
+    {
+      "id": "932f",
+      "txt": "Aaa"
+    },
+    {
+      "id": "d986",
+      "txt": "chậu hoa ăn thịt"
+    },
+    {
+      "id": "c70c",
+      "txt": "bonsai"
     }
   ],
-  "cart": [],
-  "notices": []
+  "carts": [
+    {
+      "id": "bab4",
+      "id_bill": "269f",
+      "id_Product": "4",
+      "soLuongMua": 2,
+      "giaMua": "120.000"
+    },
+    {
+      "id": "4b07",
+      "id_bill": "269f",
+      "id_Product": "4",
+      "soLuongMua": 2,
+      "giaMua": "120.000"
+    }
+  ],
+  "notices": [],
+  "hoadons": [
+    {
+      "id_User": "1",
+      "diaChi": "Hải Dương",
+      "soDienThoai": "0123456",
+      "ship": true,
+      "pay": true,
+      "total": 10000,
+      "status": 0,
+      "ngayMua": "2024-04-28T13:45:34.755Z",
+      "id": "bbb2"
+    },
+    {
+      "id": "47e6",
+      "ngayMua": "2024-04-06T05:36:23.326Z"
+    },
+    {
+      "id": "6f5c",
+      "ngayMua": "2024-04-06T05:38:36.047Z"
+    },
+    {
+      "id_User": "1",
+      "diaChi": "sdfg",
+      "soDienThoai": "08888",
+      "ship": true,
+      "pay": true,
+      "total": 255000,
+      "status": 0,
+      "ngayMua": "2024-04-06T05:42:07.619Z",
+      "id": "269f"
+    }
+  ]
 }
